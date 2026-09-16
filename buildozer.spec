@@ -1,12 +1,13 @@
 [app]
-title = Booster-3
-package.name = booster3
-package.domain = com.booster3.app
+title = Boost Max Rocket
+package.name = boostmaxrocket
+package.domain = com.ug.booster
 source.dir =.
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv
 version = 1.0
-requirements = python3,kivy
+requirements = python3==3.10.12,kivy==2.3.0
 orientation = portrait
+fullscreen = 0
 
 [buildozer]
 log_level = 2
@@ -14,9 +15,8 @@ log_level = 2
 [app:android]
 android.api = 33
 android.minapi = 21
-android.sdk = 33
 android.ndk = 25b
-android.build_tools_version = 33.0.2
+android.sdk = 33
 android.accept_sdk_license_agreement = True
 android.permissions = INTERNET
-p4a.branch = master
+p4a.bootstrap = sdl2
